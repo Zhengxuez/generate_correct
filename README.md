@@ -13,6 +13,7 @@ git clone https://github.com/haotian-liu/LLaVA.git
 - Follow the installation steps in the LLaVA repository to install the necessary requirements.
 
 3. Clone the Motion Generator and the Motion Expert:
+   
    git clone https://huggingface.co/Zhengxue/llava-ftmodel-Gen
 
    git clone https://huggingface.co/Zhengxue/llava-ftmodel-Exp
