@@ -14,6 +14,7 @@ git clone https://github.com/haotian-liu/LLaVA.git
 
 3. Clone the Motion Generator and the Motion Expert:
    git clone https://huggingface.co/Zhengxue/llava-ftmodel-Gen
+
    git clone https://huggingface.co/Zhengxue/llava-ftmodel-Exp
 
 ### Launch the Services
