@@ -12,13 +12,17 @@ This repository is developed for the GenCo Framework, which integrates LVLM-base
 git clone https://github.com/haotian-liu/LLaVA.git
 - Follow the installation steps in the LLaVA repository to install the necessary requirements.
 
+3. Clone the Motion Generator and the Motion Expert:
+   git clone https://huggingface.co/Zhengxue/llava-ftmodel-Gen
+   git clone https://huggingface.co/Zhengxue/llava-ftmodel-Exp
+
 ### Launch the Services
 
-3. Launch the controller:
+4. Launch the controller:
   ```
   python -m llava.serve.controller --host 0.0.0.0 --port 10000
   ```
-4. Launch the model workers for the Motion Generator and the Motion Expert:
+5. Launch the model workers for the Motion Generator and the Motion Expert:
 - For the Motion Generator:
   ```
   python -m llava.serve.model_worker --host 0.0.0.0 --controller http://localhost:10000 --port 40000 --worker http://localhost:40000 --model-path llava_ftmodel_Gen
@@ -30,7 +34,7 @@ git clone https://github.com/haotian-liu/LLaVA.git
 
 ### Run the Interaction Script
 
-5. Set up the robot IP address and run the interaction script:
+6. Set up the robot IP address and run the interaction script:
   ```
   python interact_llm_robot.py
   ```
